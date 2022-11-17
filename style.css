@@ -1,0 +1,151 @@
+:root{
+    --bg-color: #361252;
+    --cont-bg-color: #A7E07B;
+    --second-bg-color: #b47be0;
+    --ff: 'Be Vietnam Pro', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+box-sizing: border-box;
+
+}
+
+/* Remove default margin */
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration-skip-ink: auto;
+    font: inherit;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: var(--ff);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--bg-color);
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1, #start-text{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--second-bg-color);
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem;
+
+}
+
+
+.counter-box, .counter{
+    position: relative;
+    margin: auto;
+    display: flex;
+    
+}
+
+.counter-box{
+    left: .5rem;
+    width: 50%;
+    margin-top: 2rem;
+    align-items: center;    
+}
+
+.counter{
+    background-color: #E0B47B;
+    padding: 1rem;
+    width: 6rem;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+
+.opt-img{
+    margin: auto;
+    position: relative;
+    right: .5rem;
+    margin-top: 1rem;
+    max-height: 4rem;
+}
+
+#start-text{
+    min-width: 95%;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--second-bg-color);
+}
+
+.container{
+    position: relative;
+    top: 2.3rem;
+    opacity: 80%;
+    border-radius: 15px;
+    background-color: var(--cont-bg-color);
+    font-weight: 600;
+    max-width: 36rem;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+}
+
+.group-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.group-btn > button{
+    margin: 1rem;
+    background-color: var(--second-bg-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.group-btn > button:hover{
+    background-color: #c699e8;
+}
+
+.group-btn > button > img{
+    width: 6rem;
+}
+
+.new-game{
+    position: relative;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #E0B47B;
+    border: 0;
+}
+
+.new-game:hover{
+    background-color: #eac493;
+}

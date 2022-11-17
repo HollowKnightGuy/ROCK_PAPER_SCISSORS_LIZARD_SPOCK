@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPTLS | Pablo Ortiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="counter-box">
+            <span class="usertext" id="usertext">User</span>
+            <div class="counter">
+                <span id="user-points" type="number">0</span>
+                <span>:</span>
+                <span id="machine-points" type="number">0</span>
+            </div>
+            <span class="machinetext">Machine</span>
+        </div>
+
+        <img id="machine-img" class="opt-img" src="./img/rock.png">
+
+        <div id="start-text">
+            <p>Choose an option to get started</p>
+        </div>
+
+        <img id="user-img" class="opt-img" src="./img/rock.png">
+
+
+        <div class="group-btn" id="group-btn">
+            <button class="rock" id="rock">
+                <img src="./img/rock.png" alt="rock.png">
+            </button>
+            <button class="paper" id="paper">
+                <img src="./img/paper.png" alt="paper.png">
+            </button>
+            <button class="scissors" id="scissors">
+                <img src="./img/scissors.png" alt="scissors.png">
+            </button>
+            <button class="lizard" id="lizard">
+                <img src="./img/lizard.png" alt="lizard.png">
+            </button>
+            <button class="spock" id="spock">
+                <img src="./img/spock.png" alt="spock.png">
+            </button>
+        </div>
+
+        <button class="new-game" id="new-game">New Game</button>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
